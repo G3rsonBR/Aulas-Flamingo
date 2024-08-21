@@ -42,6 +42,8 @@
         Já tags como &lt;img&gt; são só isso, não precisam de conteúdo, então não tem fechamento.
     </p>
 
+    <hr>
+    
     <h2>Tags de estruturação do HTML:</h2>
     <ul>
         <li>&lt;!DOCTYPE&gt;: Mostra que estamos usando a última versão do HTML (v5)</li>
@@ -52,7 +54,9 @@
         <li>&lt;body&gt;: É o corpo da nossa página, o que o usuário irá ver</li>
     </ul>
 
-    <h2>Sobre atributos:</h2>
+    <hr>
+
+    <h2>Sobre atributos e valores:</h2>
     <p>
         Atributos são como Caracteristicas de um Elemento HTML (tag). Imagine que o elemento é uma pessoa, e essa pessoa pode ter algumas caracteristicas, por exemplo: <br>
         &lt;pessoa bonito="verdadeiro" genero="masculino" &gt;
@@ -62,6 +66,73 @@
             <li>Verdadeiro e Masculino são os valores dessas caracteisticas</li>
         </ul>
     </p>
-</body>
 
+    <hr>
+
+    <h2>Estruturação de Pastas:</h2>
+    <p>
+        Precisamos sempre manter uma boa organização em nosso projeto, isso ajuda para que identifiquemos
+        o que estamos fazendo. Um exemplo:
+        <ul>
+            <li>Imagine que você está criando um novo projeto</li>
+            <li>Esse projeto terá diversas páginas, ou seja, vários arquivos HTML, com diversas categorias diferentes</li>
+        </ul>
+        Nessa situação, concorda que se todos esss arquivos estiverem soltos, ficará dificil separar por "categoria"? <br>
+        Por isso criamos a esrtuturação de pastas. Uma boa estruturação é definida com uma boa legibilidade. Bater o olho e identificar. <br>
+        Nesse projeto, temos a separação de arquivos html de Aulas e de arquivos de Desafios, sabendo essa informação você já sabe do que se trata.
+        Então mantenha seu projeto com uma boa estrutura de pastas.
+    </p>
+
+    <hr>
+
+    <h2>Imagens:</h2>
+    <p>
+        Agora falando de imagens, temos uma tag que nos ajuda a fazer esse serviço: &lt;img&gt; <br>
+        Para usar essa tag, temos que saber de algumas coisas:
+        &lt;img src="" alt="" &gt;
+        <ul>
+            <li>img - é o nome do elemento (tag)</li>
+            <li>src & alt - são os atributos (caracteristicas) do elemento</li>
+            <li>"" - é o valor do atributo</li>
+        </ul>
+        Quando se trata de uma imagem, temos 2 formas de trazer elas para nossa página:
+        <ul>
+            <li>
+                &lt;img src="https://i.pinimg.com/736x/93/dc/88/93dc88f67ac295788dbef804539b6017.jpg" alt="Logo do Jogo AC Unity" &gt; - Dessa forma, apenas trazemos uma imagem por meio de um link, ela renderiza a seguinte imagem:
+                <br>  
+                <img width="50" src="https://i.pinimg.com/736x/93/dc/88/93dc88f67ac295788dbef804539b6017.jpg" alt="Logo do Jogo AC Unity">
+                <br>
+                <ul>
+                    <h3>Vantagens:</h3>
+                    <li>Não ocupa memoria do nosso sistema, afinal é uma imagem na web</li>
+                    <h3>Desvantagens:</h3>
+                    <li>Depende de internet para ser carregada</li>
+                    <li>Se a imagem cair, ela não irá aparecer na nossa página</li>
+                </ul>
+            </li>
+            
+            <br>
+
+            <li>
+                &lt;img src="../assets/imgs/acLogo.jpg alt="Logo do Jogo AC Unity" &gt; - Dessa forma, trazemos uma imagem dentro do nosso projeto, por meio do "caminho de diretório" onde a salvamos, ela renderiza a seguinte imagem:
+                <br>  
+                <img width="50" src="../assets/imgs/acLogo.jpg" alt="Logo do Jogo AC Unity">
+                <br>
+                <ul>
+                    <h3>Vantagens:</h3>
+                    <li>Não depende da internet para carregar</li>
+                    <li>A imagem nunca vai sumir, a menos que deletemos ela</li>
+                    <h3>Desvantagens:</h3>
+                    <li>Dependendo da resolução, a imagem se torna pesada, ocupando memória do nosso sistema</li>
+                </ul>
+            </li>   
+        </ul>
+
+        Cada um possui sua vantagem e desvantagem, vai de você escolher qual é o melhor para sua necessidade.
+    </p>
+
+    <hr>
+
+    
+</body>
 </html>
